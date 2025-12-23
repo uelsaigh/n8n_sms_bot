@@ -9,7 +9,7 @@ A production-grade automation system that handles 24/7 lead intake via SMS, qual
 ---
 
 ## 🏗️ Workflow Architecture
-Since this workflow is proprietary, I have provided a detailed visual walkthrough of the logic below.
+Here is a detailed visual walkthrough of the logic.
 
 ### 1. The Full Pipeline
 The system is built on a non-linear branching architecture to handle both customer-facing communication and internal data processing simultaneously.
