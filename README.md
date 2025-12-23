@@ -11,6 +11,13 @@ Home service businesses (Plumbers, HVAC, etc.) lose potential revenue due to:
 ## ✨ The Solution
 This engine acts as a 24/7 virtual office assistant. It doesn't just "chat"; it follows a logical business process to qualify a lead and push "Ready-to-Quote" data directly to the business owner.
 
+## 🚀 How it Works (Technical Deep Dive)
+1. **Intake:** Twilio sends a webhook payload to n8n containing the message body and sender ID.
+2. **Persistence:** The system queries Postgres to retrieve the last 10 messages of context.
+3. **Reasoning:** OpenAI evaluates the input against 4 mandatory fields: **Service Type, Address, Urgency, and Specific Details.**
+4. **Verification:** The AI provides a summary to the user and asks for a "Confirmation."
+5. **Closure:** Upon confirmation, the system triggers a final CRM update and an instant Lead Alert email with a "Click-to-Call" button.
+
 ---
 
 ## 🏗️ Workflow Architecture
@@ -42,13 +49,6 @@ To bridge the gap between "Conversational AI" and "Automated Action," I engineer
 * **Communication:** Twilio API (SMS)
 * **CRM:** Airtable
 * **Security:** Configured SSL/TLS for secure DB transactions.
-
-## 🚀 How it Works (Technical Deep Dive)
-1. **Intake:** Twilio sends a webhook payload to n8n containing the message body and sender ID.
-2. **Persistence:** The system queries Postgres to retrieve the last 10 messages of context.
-3. **Reasoning:** OpenAI evaluates the input against 4 mandatory fields: **Service Type, Address, Urgency, and Specific Details.**
-4. **Verification:** The AI provides a summary to the user and asks for a "Confirmation."
-5. **Closure:** Upon confirmation, the system triggers a final CRM update and an instant Lead Alert email with a "Click-to-Call" button.
 
 ## 🚀 Key Technical Features
 * **Atomic Logging:** Every message (Human and AI) is logged to Postgres with a unique Session ID.
