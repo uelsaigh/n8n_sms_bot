@@ -34,7 +34,7 @@ Here is a detailed visual walkthrough of the logic.
 The system is built on a non-linear branching architecture to handle both customer-facing communication and internal data processing simultaneously.
 
 <p align="center">
-  <img src="./assets/workflow_logic.png" width="600" alt="Full n8n Workflow Architecture">
+  <img src="./assets/workflow_sketch.png" width="600" alt="Full n8n Workflow Architecture">
   <br>
   <i>The complete end-to-end automation architecture.</i>
 </p>
