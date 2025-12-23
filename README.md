@@ -23,7 +23,12 @@ This engine acts as a 24/7 virtual office assistant. It doesn't just "chat"; it 
 ## 🏗️ Workflow Architecture
 Here is a detailed visual walkthrough of the logic.
 
-### 1. The Full Pipeline
+<p align="center">
+  <img src="./assets/workflow_overview.png" width="900" alt="Full n8n Workflow Architecture">
+  <br>
+  <i>The complete end-to-end automation architecture.</i>
+</p>### 1. The Full Pipeline
+
 The system is built on a non-linear branching architecture to handle both customer-facing communication and internal data processing simultaneously.
 
 
