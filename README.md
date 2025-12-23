@@ -2,6 +2,15 @@
 
 A production-grade automation system that handles 24/7 lead intake via SMS, qualifies prospects using an LLM-driven verification loop, and maintains stateful conversation history in a PostgreSQL database.
 
+## 🎯 The Problem
+Home service businesses (Plumbers, HVAC, etc.) lose potential revenue due to:
+* **Response Latency:** Leads go cold if not answered within 5 minutes.
+* **Incomplete Data:** Back-and-forth texting to get addresses or job details is time-consuming.
+* **Data Silos:** Leads trapped in SMS threads instead of a centralized CRM.
+
+## ✨ The Solution
+This engine acts as a 24/7 virtual office assistant. It doesn't just "chat"; it follows a logical business process to qualify a lead and push "Ready-to-Quote" data directly to the business owner.
+
 ## 📺 Project Walkthrough & Demo
 [Insert Link to Video or Embed GIF Here]
 *This video demonstrates the end-to-end flow: from the initial customer SMS to the AI qualification summary and final email notification.*
@@ -45,5 +54,9 @@ To bridge the gap between "Conversational AI" and "Automated Action," I engineer
 4. **Verification:** The AI provides a summary to the user and asks for a "Confirmation."
 5. **Closure:** Upon confirmation, the system triggers a final CRM update and an instant Lead Alert email with a "Click-to-Call" button.
 
+## 🚀 Key Technical Features
+* **Atomic Logging:** Every message (Human and AI) is logged to Postgres with a unique Session ID.
+* **Custom Prompt Engineering:** System prompts include strict constraints on SMS character limits and professional tone.
+* **Error Handling:** Implemented "Always Output Data" settings to ensure the workflow doesn't break on new leads with zero history.
 ---
 *Developed by Usama Elsaigh - Specialist in AI Automation & Systems Architecture.*
