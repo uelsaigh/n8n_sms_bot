@@ -11,10 +11,6 @@ Home service businesses (Plumbers, HVAC, etc.) lose potential revenue due to:
 ## ✨ The Solution
 This engine acts as a 24/7 virtual office assistant. It doesn't just "chat"; it follows a logical business process to qualify a lead and push "Ready-to-Quote" data directly to the business owner.
 
-## 📺 Project Walkthrough & Demo
-[Insert Link to Video or Embed GIF Here]
-*This video demonstrates the end-to-end flow: from the initial customer SMS to the AI qualification summary and final email notification.*
-
 ---
 
 ## 🏗️ Workflow Architecture
