@@ -1,1 +1,1 @@
-# n8n_sms_bot
+# n8n-sms-bot
