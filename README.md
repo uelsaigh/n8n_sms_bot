@@ -12,7 +12,7 @@ Home service businesses (Plumbers, HVAC, etc.) lose potential revenue due to:
 This engine acts as a 24/7 virtual office assistant. It doesn't just "chat"; it follows a logical business process to qualify a lead and push "Ready-to-Quote" data directly to the business owner.
 
 ## 🏗️ Workflow Overview
-Here is a detailed visual walkthrough of the architecture in n8n.
+Here is a visual overview of the architecture in n8n.
 
 <p align="center">
   <img src="./assets/workflow_overview.png" width="1300" alt="Full n8n Workflow Architecture">
